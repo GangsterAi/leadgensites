@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --void: #0a0b0d;
+  --charcoal: #1a1d21;
+  --graphite: #2c3138;
+  --steel: #8b929a;
+  --mist: #e8eaed;
+  --accent: #00b4ff;
+  --background: var(--void);
+  --foreground: var(--mist);
+}
+
+@theme inline {
+  --color-void: var(--void);
+  --color-charcoal: var(--charcoal);
+  --color-graphite: var(--graphite);
+  --color-steel: var(--steel);
+  --color-mist: var(--mist);
+  --color-accent: var(--accent);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--void);
+  color: var(--mist);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+  color: var(--mist);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.hero-gradient {
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 20%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 55%),
+    radial-gradient(ellipse 60% 50% at 10% 80%, color-mix(in srgb, var(--graphite) 80%, transparent), transparent 50%),
+    var(--void);
+}
+
+.card-surface {
+  background: var(--charcoal);
+  border: 1px solid color-mix(in srgb, var(--graphite) 90%, var(--mist));
+}
+
+.placeholder-jet {
+  background:
+    linear-gradient(135deg, var(--graphite) 0%, var(--charcoal) 45%, var(--void) 100%);
+}
