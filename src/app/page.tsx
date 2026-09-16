@@ -15,7 +15,7 @@ export const metadata = pageMetadata({
 export default function HomePage() {
   return (
     <>
-      <section className="hero-gradient border-b border-graphite">
+      <section className="hero-photo border-b border-graphite" aria-label="Silver long-range business jet touching down on a wet runway">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:items-center lg:py-20">
           <div>
             <p className="text-sm font-medium uppercase tracking-wider text-steel">
