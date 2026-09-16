@@ -74,7 +74,7 @@ textarea:focus-visible {
     linear-gradient(180deg, rgba(10,11,13,0.25) 0%, rgba(10,11,13,0.85) 100%),
     url('/hero/debranded-blue.svg');
   background-size: cover;
-  background-position: center 40%;
+  background-position: center 45%;
 }
 .hero-photo .card-surface {
   background: rgba(26, 29, 33, 0.92);
