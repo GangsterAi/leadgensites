@@ -65,3 +65,18 @@ textarea:focus-visible {
   background:
     linear-gradient(135deg, var(--graphite) 0%, var(--charcoal) 45%, var(--void) 100%);
 }
+
+.hero-photo {
+  position: relative;
+  background-color: var(--void);
+  background-image:
+    linear-gradient(90deg, rgba(10,11,13,0.92) 0%, rgba(10,11,13,0.75) 42%, rgba(10,11,13,0.35) 70%, rgba(10,11,13,0.55) 100%),
+    linear-gradient(180deg, rgba(10,11,13,0.25) 0%, rgba(10,11,13,0.85) 100%),
+    url('/hero/debranded-blue.webp');
+  background-size: cover;
+  background-position: center 40%;
+}
+.hero-photo .card-surface {
+  background: rgba(26, 29, 33, 0.92);
+  backdrop-filter: blur(8px);
+}
